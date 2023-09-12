@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "dashboard",
+    "login",
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
         "NAME": "Students",
         "HOST": "localhost",
         "USER": "root",
-        
+        "PASSWORD": "MyPassword"
     }
 }
 
