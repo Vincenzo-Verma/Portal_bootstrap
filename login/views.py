@@ -1,18 +1,23 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
 from django.contrib import messages
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 # Create your views here.
 # def login_render(request):
   # pass
 
 
-def login(request):
+def login_block(request):
   if request.method == 'POST':
     # print('Login Successful')
-    username = request.POST['userId_login']
-    password = request.POST['password_login']
+    username = request.POST.get('userId_login')
+    password = request.POST.get('password_login')
     # print('login triggered')
+    user = authenticate(username = username, password = password)
+    if user is not None:
+      login(request, user)
+      redirect('dashboard/home/')
+      # messages.error(request, "User Dosen't exist")
   return render(request, 'registration/login.html')
 
 
@@ -20,16 +25,22 @@ def sign_up(request):
   if request.method == 'POST':
     # print('Sign In Successful')
     print(request.POST)
-    username = request.POST['userId_signup']
-    email = request.POST['email_signup']
-    password = request.POST['password_signup']
-    repassword = request.POST['rePassword_signup']
+    username = request.POST.get('userId_signup')
+    email = request.POST.get('email_signup')
+    password = request.POST.get('password_signup')
+    repassword = request.POST.get('rePassword_signup')
     
+    print(username, email, password)
     
     if password == repassword:
       user = User.objects.create_user(username, email, password)
-      user.save()
-      return redirect('dashboard/home/')
+      try:
+        user.save()
+      except:
+        messages.error('Username already exists')
+      
+      login(request, user)
+      # return redirect('dashboard/home/')
     else:
       pass
 

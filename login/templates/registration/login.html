@@ -16,23 +16,23 @@
             <form method="POST" action="/login/sign_up/">
                 {% csrf_token %}
                 <h2>sign up</h2>
-                <div class="form-group" id="uid" name="userId_signup">
-                    <input type="text" required>
+                <div class="form-group" >
+                    <input type="text" id="uid" name="userId_signup" required>
                     <label for="">user id</label>
                     <i class="fas fa-user"></i>
                 </div>
-                <div class="form-group" id="smail" name="email_signup">
-                    <input type="email" required>
+                <div class="form-group" >
+                    <input type="email" id="smail" name="email_signup" required>
                     <label for="">email</label>
                     <i class="fas fa-at"></i>
                 </div>
-                <div class="form-group" id="spass" name="password_signup">
-                    <input type="password" required>
+                <div class="form-group" >
+                    <input type="password" id="spass" name="password_signup" required>
                     <label for="">password</label>
                     <i class="fas fa-lock"></i>
                 </div>
-                <div class="form-group" id="scpass" name="rePassword_signup">
-                    <input type="password" required>
+                <div class="form-group" >
+                    <input type="password" id="scpass" name="rePassword_signup" required>
                     <label for="">confirm password</label>
                     <i class="fas fa-lock"></i>
                 </div>
@@ -46,13 +46,13 @@
             <form method="POST" action="/login/login/">
                 {% csrf_token %}
                 <h2>login</h2>
-                <div class="form-group" id="luid" name="userId_login">
-                    <input type="text" required>
+                <div class="form-group" >
+                    <input type="text" id="luid" name="userId_login" required>
                     <i class="fas fa-user"></i>
                     <label for="">user id</label>
                 </div>
-                <div class="form-group" id="lpass" name="password_login">
-                    <input type="password" required>
+                <div class="form-group" >
+                    <input type="password" id="lpass" name="password_login" required>
                     <i class="fas fa-lock"></i>
                     <label for="">password</label>
                 </div>
