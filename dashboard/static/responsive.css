@@ -1,0 +1,22 @@
+@media screen and (max-Width:1440px){
+    .main{
+        margin-left: 240px;
+    margin-right: 58px;
+    margin-bottom: 210px;
+    width: 30px auto 0px auto;
+    font-size: 25px;
+    box-sizing: 50px;
+    border-radius: 11.4px;
+    box-shadow: 3px 3px 20px 20px rgba(0, 0, 0,0.5);
+    border-top: 10px solid blue;
+    margin-top: 71px;
+    }
+    *{
+        margin:1px;
+    }
+    .Basic{
+        width: 657px;
+        padding: 101px;
+        margin: 73px auto
+    }
+}

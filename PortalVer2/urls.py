@@ -19,11 +19,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include('login.urls')),
-    path('login/', include('login.urls')),
-    path('sign_up/', include('login.urls')),
+    path(r"", include('authentication.urls'), name='login'),
+    path(r"authentication/", include('authentication.urls'), name='sign_up'),
+    # path('login/', include('authentication.urls')),
+    # path('sign_up/', include('authentication.urls')),
     # path('', include('login.urls')),
-    # path('', include('django.contrib.auth.urls')),
-    path('dashboard/', include('dashboard.urls')),
+    # path('', include('django.contrib.authentication.urls')),
+    path(r'dashboard/', include('dashboard.urls'), name='home'),
 
 ]

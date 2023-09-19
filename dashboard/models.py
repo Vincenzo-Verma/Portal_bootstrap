@@ -7,15 +7,15 @@ class User(models.Model):
   ('F', 'Female'),
   ('O', 'Others'),
   ]
-  uname = models.CharField(max_length = 255, primary_key = True)
+  # uname = models.CharField(max_length = 255, primary_key = True)
   f_name = models.CharField(max_length = 255)
   l_name = models.CharField(max_length = 255)
   fatherName = models.CharField(max_length = 255)
   motherName = models.CharField(max_length = 255)
   dob = models.DateField()
-  institutuionName= models.CharField(max_length = 255)
+  # institutuionName= models.CharField(max_length = 255)
   gender = models.CharField(max_length = 1, choices = GENDER_CHOICES)
-  phoneNumber = models.CharField(max_length = 255)
+  phoneNumber = models.CharField(max_length = 255, primary_key= True)
   email = models.EmailField(unique = True)
   address = models.TextField()
 

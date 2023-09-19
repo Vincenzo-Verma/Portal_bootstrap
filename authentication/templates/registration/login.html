@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>login/sign-up</title>
 </head>
@@ -13,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="form-container sign-up">
-            <form method="POST" action="/login/sign_up/">
+            <form method="POST" action="/authentication/sign_up/">
                 {% csrf_token %}
                 <h2>sign up</h2>
                 <div class="form-group" >
@@ -43,7 +47,7 @@
             </form>
         </div>
         <div class="form-container sign-in">
-            <form method="POST" action="/login/login/">
+            <form method="POST" action="/authentication/login/">
                 {% csrf_token %}
                 <h2>login</h2>
                 <div class="form-group" >

@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(blured.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div.main{
+    margin-left:400px;
+    margin-right:300px;
+    margin-bottom: 200px;
+    width: 30px auto 0px auto;
+    font-size: 25px;
+    box-sizing: 50px;
+    border-radius: 11.4px;
+
+}
+div.Basic{
+width: 100%;
+height:900px;
+padding:20px;
+font-size:19px;
+border-radius: 89px;
+width:650px;
+margin-top:150px;
+box-sizing: 50px;
+box-shadow:3px 3px 30px 25px rgba(0, 0, 0,0.5);
+border-top: 10px solid blue;
+border-bottom: 10px solid blue;
+background-color: whitesmoke;
+}
+h2{
+    font-size: 34px;
+
+    font-family: sans-serif;
+    line-height: 34px;
+    padding: 10px;
+    text-align: center;
+}
+input#name{
+    width:35%;
+    
+    font-family: sans-serif;
+    padding: 8px 0 8px 35px;
+}
+input#form{
+    width:100%;
+    position: relative;
+    margin:5px auto;
+}
+label{
+    font-size: 20px;
+    padding:7px;
+    margin-left:30px;
+    display: inline-block;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: black;
+}
+input#name{
+    border: 0.9px #ddd;
+    border-radius: 5px;
+    height:40px;
+    outline: 0;
+    padding: 8px;
+    background-color:white;
+}
+input#Address{
+    width:400px;
+    height:40px;
+    border:0.9px #ddd;
+    border-radius: 5px;
+    outline:0;
+    padding:8px;
+    background:white;
+}
+input#Date{
+    width: 350px;
+    height:40px;
+    font-size: 16px;
+    border: 0.9px #ddd;
+    border-radius: 5px;
+    outline: 0;
+    padding: 8px;
+    background-color:white;
+}
+  div.h3{
+    width:1000px;
+    margin-right: 100px;
+    padding: 0px 0 0px 0px;
+}
+div.h15{
+    width:890px;
+    height:40px;
+    padding:0px 0 0px 0px;
+}
+div.h1 span{
+    
+    margin-left: -3%;
+    padding: 0px 0 8px 20px;
+}
+div.h5span{
+width: 30px;
+height:40px;
+padding:0px 0 0px 15px;
+}
+div.h6 span{
+    width: 200px;
+   padding:0px 0 0px 20px;
+}
+input#next{
+    width:240px;
+    padding:10px;
+    margin-left: 130px;
+    font-size:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(
+        to right,#219bff,#356bff
+     );
+    color:white;
+    cursor:pointer;
+    border:1px solid;
+    box-shadow: 1px 1px 7px;
+    margin-bottom: 3px;
+    margin-top: 8px;
+ 
+}
+input#City{
+ margin-left: 30px;
+ margin-bottom: 10px;
+ margin-right:-6px;
+ height: 50px;
+    width:160px;
+    padding:5px;
+    border-radius: 5px;
+    border:0.7px #ddd;
+    outline:0;
+    background:white;
+}
+div.h20{
+    font-size: 20px;
+   }
+input#Postal{
+    margin-left:133px;
+    height: 50px;
+       width:165px;
+        padding:5px;
+        border-radius: 5px;
+        border:0.7px #ddd;
+        outline:0;
+        background:white;
+    }
+ input#Email{
+    width:355px;
+    height:40px;
+    border:0.9px #ddd;
+    border-radius: 5px;
+    outline:0;
+    padding:8px;
+    background:white;
+}
+input#number{
+width:340px;
+border:0.9px #ddd;
+border-radius: 5px;
+outline:0;
+padding:8px;
+background:white;
+}
+
+select{
+    font-family: sans-serif;
+    height: 50px;
+    font-size: 14px;
+    width:162px;
+    padding:-10px;
+    border-radius: 5px;
+    border:0.7px #ddd;
+    outline:0;
+    background:white;
+}

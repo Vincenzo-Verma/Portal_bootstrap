@@ -1,0 +1,141 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Details</title>
+            {% load static %}
+            {% load bootstrap5 %}
+            <!-- {% bootstrap_css %} -->
+            {% bootstrap_javascript %}
+            <link rel="Stylesheet" type="text/Css" href="{% static 'Basic_details.css' %}">
+           
+            </head>
+    <body>
+        <div class="main">
+        <div class="basic">
+        <h2>Basic Details Of The Candiatate</h2>
+        <form id="basic" method="POST" method="/dashboard/first_page">
+        <br/><br/>
+        <div class="h1">
+        <label>Student Name:</label> <!--Here is the start of the Student Name-->
+        <input type="text" name="f_name" id="name"
+        placeholder="First Name" required="finame">
+        <span><input type="text" name="l_name" id="name"
+            placeholder="Last Name" required="finame">
+        </span>
+        </div>
+         <br/>
+         <div class="h3"> <!--This Division is the Start class Contain Father,Mother and Name of the Institute-->
+         <label>Father Name:</label>
+         <input type="text" name="fathername" id="name"
+         placeholder="Enter Father Name" required="faname">
+         <br/><br/>
+         <label>Mother name:</label>
+         <input type="text" name="mothername" id="name"
+         placeholder="Enter Mother Name" required="Moname">
+         <br/><br/>
+        </div>   <!--This Division is the End class Contain Father,Mother and Name of the Institute-->
+        <div class="h15">
+         <!-- <label>Name of The Institute:</label> -->
+        <!-- <input type="text" name="fname" id="name" -->
+        <!-- placeholder="Enter Institute Name" required="fname"> -->
+        </div>
+        <br/>
+        <div class="h20">
+        <label>Gender:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender"
+        id="Male">
+        &nbsp;
+        <span id="Male">Male</span>
+        &nbsp;&nbsp;
+        <input type="radio" name="gender"
+        id="Female">
+        &nbsp;
+        <span id="Female">Female</span>
+        &nbsp;&nbsp;
+        <input type="radio" name="gender"
+        id="Other">
+        &nbsp;
+        <span id="Other">Other</span>
+        <br/> <br/></div>
+        <label>Date Of Birth:</label>
+        <input type="date" name="dob" id="Date"
+        placeholder="Date Of Birth" required="Date">
+        <br/><br/>
+        <label>Email address:</label>
+        <input type="Text" name="email" id="Email"
+        placeholder="Enter Email" required="Email">
+        <br/><br/>
+        <label>Phone Number:</label>
+        <input type="number" name="phonenumber" id="number"
+        placeholder="Enter Phone Number" required="number">
+        <br/><br/>
+        <label>Address:</label>
+        <input type="text" name="address" id="Address"
+        placeholder="Street Address" required="Address">
+         <br/><br/>
+        <div class="h5"> <!--Here the Division Starts From City to State-->
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="city" id="City"
+        placeholder="City" required="City">
+        <span> 
+        <label for="State"></label>
+        <select id="State">
+        <option id="State">Select State</option> 
+        <option id="Andhra Pradesh">Andhra Pradesh</option>
+        <option id="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option id="Assam">Assam</option>
+        <option id="Bihar">Bihar</option>
+        <option id="Chhattisgarh">Chhattisgarh</option>
+        <option id="Goa">Goa</option>
+        <option id="Gujrat">Gujrat</option>
+        <option id="Haryana">Haryana</option>
+        <option id="Himachal Pradesh">Himachal Pradesh</option>
+        <option id="jammu And Kashmir">Jammu And Kashmir</option>
+        <option id="Jharkhand">Jharkhand</option>
+        <option id="Karnataka">Karnataka</option>
+        <option id="Kerala">Kerala</option>
+        <option id="Madhya Pradesh">Madhya Pradesh</option>
+        <option id="Maharashtra">Maharashtra</option>
+        <option id="manipur">manipur</option>
+        <option id="Meghalaya">Meghalaya</option>
+        <option id="Mizoram">Mizoram</option>
+        <option id="Nagaland">Nagaland</option>
+        <option id="Odisha">Odisha</option>
+        <option id="Punjab">Punjab</option>
+        <option id="Rajasthan">Rajasthan</option>
+        <option id="Sikkim">Sikkim</option>
+        <option id="Tamil Nadu">Tamil Nadu</option>
+        <option id="Telangana">Telangana</option>
+        <option id="Tripura">Tripura</option>
+        <option id="Uttar Pradesh">Uttar Pradesh</option>
+        <option id="Uttarakhand">Uttarakhand</option>
+        <option id="West Bengal">West Bengal</option>
+        </option>
+         </span>
+        </div>    <!-- Here The Division Ends From City To State  -->
+        <br/>
+        <div class="h6">  <!-- Here is the next division From Area Code To Country  -->
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" name="postal" id="Postal"
+        placeholder="Postal Code/Area Code" required="Postal">
+        <span>   
+         <label for="Country"></label>
+         <select id="Country">
+           <option value="Country">Select Country</option>
+           <Option value="India">India</Option> 
+         </select>
+        </span>
+        </div> <!-- Here is the End Of the last Division  -->
+         <br/>
+        <div class="Next">
+         <input type="submit" class="button" value="Next"
+        name="Next" id="Next"></div>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

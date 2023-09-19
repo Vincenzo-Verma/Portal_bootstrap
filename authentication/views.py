@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
+from django.urls import reverse
 # Create your views here.
 # def login_render(request):
   # pass
@@ -15,8 +16,10 @@ def login_block(request):
     # print('login triggered')
     user = authenticate(username = username, password = password)
     if user is not None:
-      login(request, user)
-      redirect('dashboard/home/')
+      print(login(request, user))
+      return redirect('dashboard:home')
+      # reverse('/dashboard/')
+      # redirect('/dashboard/home/')
       # messages.error(request, "User Dosen't exist")
   return render(request, 'registration/login.html')
 
@@ -35,12 +38,12 @@ def sign_up(request):
     if password == repassword:
       user = User.objects.create_user(username, email, password)
       try:
-        user.save()
+        print(user.save())
       except:
         messages.error('Username already exists')
       
       login(request, user)
-      # return redirect('dashboard/home/')
+      return redirect('dashboard:home')
     else:
       pass
 

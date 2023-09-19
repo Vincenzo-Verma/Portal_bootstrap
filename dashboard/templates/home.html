@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE </title>
+    {% load static %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
 </head>
 <body>
-    <h1>This es the home page of the dashboard</h1>
+    <h1>This is the home page of the dashboard</h1>
+    <button type="submit" class="btn"><a href="/dashboard/first_page">The form</a> </button>
+    <button type='submit' class="btn"><a href="/dashboard/logout_user"> LOGOUT</a></button>
 </body>
 </html>
