@@ -32,7 +32,7 @@ This is an alternate version of the Scholarship Redressal Prtal
         ## Mysql Setup
 
         1. Install mysql community server
-        2. Setup the server with password "MyPAssword"
+        2. Setup the server with password "MyPassword"
             or
             Edit settings.py file to setup your password of mysql 
         3. Create a database named Students
