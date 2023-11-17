@@ -3,12 +3,12 @@
 This is an alternate version of the Scholarship Redressal Prtal
 
 # Project Setup
-    ## Depeldencies and programs Required are 
-    - Django
-    - Bootstrap v5
-    - pip
-    - pipenv
-    - MySQL
+## Depeldencies and programs Required are 
+- Django
+- Bootstrap v5
+- pip
+- pipenv
+- MySQL
     
 
     ## Steps Required
