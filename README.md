@@ -22,7 +22,9 @@ This is an alternate version of the Scholarship Redressal Prtal
     3. Installing required dependencies
         `
         pipenv install django
+        ``
         pipenv install mysqlclient
+        ``
         pipenv install django-bootstrap5
         `
         ## Mysql Setup
